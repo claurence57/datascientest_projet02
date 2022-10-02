@@ -1,0 +1,188 @@
+
+========================================
+ PROJET02 API availability test
+ M. Mazouari 
+ C. Laurence
+========================================
+
+request done at "/status"
+
+expected result = 200
+actual result = 200
+
+==> SUCCESS
+
+
+      ========================================================
+        PROJET02 API content test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+
+      request done at "/sentiment"
+      | username=mounir
+      | password=mazouari
+      | sentence="However I have had bad experience camera has been handled in an unprofessional manner, the staff seems not really care our personal belongings"
+
+      score = negatif
+
+      ==>  SUCCESS
+
+    
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=mounir
+      | password=mazouari
+      
+      expected result = 200
+      actual result = 200
+      
+      ==>  SUCCESS
+      
+      
+      ========================================================
+        PROJET02 API content test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+
+      request done at "/sentiment"
+      | username=mounir
+      | password=mazouari
+      | sentence="The Eiffel Tower is absolutely beautiful I love seeing the Eiffel Tower it has amazing views from the top it is truly a remarkable site"
+
+      score = positif
+
+      ==>  SUCCESS
+
+    
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=christophe
+      | password=laurence
+      
+      expected result = 200
+      actual result = 200
+      
+      ==>  SUCCESS
+      
+      
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=clementine
+      | password=mandarine
+      
+      expected result = 403
+      actual result = 403
+      
+      ==>  SUCCESS
+      
+      
+      ========================================================
+        PROJET02 API content test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+
+      request done at "/sentiment"
+      | username=mounir
+      | password=mazouari
+      | sentence="However I have had bad experience camera has been handled in an unprofessional manner, the staff seems not really care our personal belongings"
+
+      score = negatif
+
+      ==>  SUCCESS
+
+    
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=mounir
+      | password=mazouari
+      
+      expected result = 200
+      actual result = 200
+      
+      ==>  SUCCESS
+      
+      
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=christophe
+      | password=laurence
+      
+      expected result = 200
+      actual result = 200
+      
+      ==>  SUCCESS
+      
+      
+      ========================================================
+        PROJET02 API content test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+
+      request done at "/sentiment"
+      | username=mounir
+      | password=mazouari
+      | sentence="The Eiffel Tower is absolutely beautiful I love seeing the Eiffel Tower it has amazing views from the top it is truly a remarkable site"
+
+      score = positif
+
+      ==>  SUCCESS
+
+    
+      ========================================================
+        PROJET02 API Authentication test
+        M. Mazouari
+        C. Laurence
+      ========================================================
+      
+      request done at "/permissions"
+      | username=clementine
+      | password=mandarine
+      
+      expected result = 403
+      actual result = 403
+      
+      ==>  SUCCESS
+      
+      
+========================================
+ PROJET02 API availability test
+ M. Mazouari 
+ C. Laurence
+========================================
+
+request done at "/status"
+
+expected result = 200
+actual result = 200
+
+==> SUCCESS
+

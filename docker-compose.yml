@@ -1,0 +1,46 @@
+---
+version: "3.9"
+services:
+   projet02:
+      image: projet02:latest
+      container_name: 'projet02'
+      ports:
+        - target: 8000
+          published: 8000
+          protocol: tcp
+          mode: host
+   apistatus:
+      image: api_status:latest
+      container_name: 'apistatus'
+      depends_on:
+        - 'projet02'
+      volumes:
+        - /home/ubuntu/projet02/shared_volume:/datascientest/result
+      environment:
+         LOG: "yes"
+         API_SERVER: "projet02"
+         API_PORT: 8000
+   authentication:
+      image: authentication:latest
+      container_name: 'authentication'
+      depends_on:
+        - projet02
+        - apistatus
+      volumes:
+        - /home/ubuntu/projet02/shared_volume:/datascientest/result
+      environment:
+         LOG: "yes"
+         API_SERVER: "projet02"
+         API_PORT: 8000
+   apicontent:
+      image: api_content:latest
+      container_name: 'apicontent'
+      depends_on:
+        - projet02
+        - apistatus
+      volumes:
+        - /home/ubuntu/projet02/shared_volume:/datascientest/result
+      environment:
+         LOG: "yes"
+         API_SERVER: "projet02"
+         API_PORT: 8000
